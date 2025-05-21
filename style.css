@@ -68,8 +68,8 @@ nav ul{
    align-items: center;
 }
 
-.lien{
-   color: black;
+#themes a{
+   color: #f7d800;
    text-decoration: none;
    font-weight: 500;
    transition: all .3s ease-in-out;
@@ -77,4 +77,16 @@ nav ul{
 
 .lien:hover{
    color: #8005F2;
+}
+
+#logoNom {
+    display: flex;
+    text-decoration: none;
+    color: #004990;
+    gap: 16px;
+   align-items: center;
+}
+#logoNom img{
+    height: 100px;
+    width: 100px;
 }

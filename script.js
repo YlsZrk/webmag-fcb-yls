@@ -12,10 +12,22 @@ function getData() {
        /// ON ECRIT LE CODE ICI ! 
       let journal = data.journal
       let themes = data.journal.themes
-       
+      let nomJournal = data.journal.nomJournal
      
-         
+      //NAV
+      //Logo
+      let logoNom = document.getElementById("logoNom") 
 
+      let logo = document.createElement(`img`)
+      let nom = document.createElement(`h3`)
+      nom.textContent = journal.nomJournal
+      logo.src = `images/Logo_FC_Barcelona.svg.png`
+      logo.alt = "logo"
+      logoNom.appendChild(logo)
+      logoNom.appendChild(nom)
+      console.log(logoNom);
+      
+      //Themes
       let ulThemes = document.getElementById("themes")
       console.log(ulThemes);
       
@@ -24,9 +36,10 @@ function getData() {
       themes.forEach(theme => {
 
         let listeThemes = document.createElement(`li`)
-        
-        listeThemes.textContent = theme.nom
-
+        let lienThemes = document.createElement(`a`)
+        lienThemes.textContent = theme.nom
+        lienThemes.href =
+        listeThemes.appendChild(lienThemes)
         ulThemes.appendChild(listeThemes)
       
       });
