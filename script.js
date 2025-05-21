@@ -21,6 +21,8 @@ function getData() {
       let logo = document.createElement(`img`)
       let nom = document.createElement(`h3`)
       nom.textContent = journal.nomJournal
+      // console.log(nom.textContent[0]);
+      // nom.textContent[0].classList.add("rouge");
       logo.src = `images/Logo_FC_Barcelona.svg.png`
       logo.alt = "logo"
       logoNom.appendChild(logo)
