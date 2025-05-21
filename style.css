@@ -1,0 +1,80 @@
+html, body{
+   font-family: 'Poppins', sans-serif;
+}
+
+body{
+   margin: 0;
+}
+
+.boutons-container{
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.bouton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   text-decoration: none;
+   padding: 8px 16px;
+   /* width: fit-content; */
+   height: fit-content;
+   font-weight: 500;
+   transition: all .3s ease-in-out;
+}
+
+.bouton.primaire{
+   background: #8005F2;
+   color: white;
+}
+
+.bouton.primaire:hover{
+   background: #c38ff5;
+}
+
+.bouton.secondaire{
+   background: transparent;
+   color: #8005F2;
+   border: 2px solid #8005F2;
+}
+
+.bouton.secondaire:hover{
+   border: 2px solid #c38ff5;
+   color: #c38ff5;;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px 32px;
+   -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24); 
+   box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24);
+}
+
+nav ul{
+   display: flex;
+   gap: 16px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#logo{
+   display: flex;
+   gap: 16px;
+   align-items: center;
+}
+
+.lien{
+   color: black;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all .3s ease-in-out;
+}
+
+.lien:hover{
+   color: #8005F2;
+}

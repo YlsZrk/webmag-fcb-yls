@@ -1,0 +1,89 @@
+{
+  "journal": {
+    "nomJournal": "Barça Futur",
+    "phraseAccroche": "Le présent du Barça, l’avenir en marche",
+    "texteAppelAction": "Rejoignez notre communauté pour suivre l’ascension de Lamine Yamal et les talents du Barça",
+    "articlePrincipal": {
+      "titre": "Lamine Yamal, le prodige du Barça : une ascension fulgurante",
+      "description": "À seulement 17 ans, Lamine Yamal s'impose comme le nouveau visage du FC Barcelone, héritant du légendaire numéro 10 et battant des records de précocité.",
+      "date": "20 Mai 2025",
+      "theme": "Innovations",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lamine_Yamal_2023.jpg/800px-Lamine_Yamal_2023.jpg"
+    },
+    "articles": [
+      {
+        "titre": "Yamal dépasse Messi : un nouveau record de dribbles réussis",
+        "date": "2 Février 2025",
+        "theme": "Recherche",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lamine_Yamal_2023.jpg/800px-Lamine_Yamal_2023.jpg"
+      },
+      {
+        "titre": "Clásico historique : Yamal, plus jeune buteur face au Real Madrid",
+        "date": "26 Octobre 2024",
+        "theme": "Applications",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lamine_Yamal_2023.jpg/800px-Lamine_Yamal_2023.jpg"
+      },
+      {
+        "titre": "Un contrat record : clause libératoire à 1 milliard d’euros pour Yamal",
+        "date": "20 Mai 2025",
+        "theme": "Débats",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lamine_Yamal_2023.jpg/800px-Lamine_Yamal_2023.jpg"
+      },
+      {
+        "titre": "Lamine Yamal, lauréat du Trophée Kopa 2024",
+        "date": "28 Octobre 2024",
+        "theme": "Partenariats",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lamine_Yamal_2023.jpg/800px-Lamine_Yamal_2023.jpg"
+      },
+      {
+        "titre": "Le numéro 10 pour Yamal : une passation symbolique",
+        "date": "13 Juillet 2025",
+        "theme": "Éthique",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lamine_Yamal_2023.jpg/800px-Lamine_Yamal_2023.jpg"
+      }
+    ],
+    "themes": [
+      {
+        "nom": "Innovations",
+        "description": "Les jeunes talents qui redéfinissent le football moderne."
+      },
+      {
+        "nom": "Recherche",
+        "description": "Analyses tactiques et statistiques des joueurs du Barça."
+      },
+      {
+        "nom": "Applications",
+        "description": "Les moments-clés et performances en match."
+      },
+      {
+        "nom": "Débats",
+        "description": "Discussions autour des contrats, records et héritages sportifs."
+      },
+      {
+        "nom": "Partenariats",
+        "description": "Les relations entre le Barça, ses sponsors et son académie."
+      },
+      {
+        "nom": "Éthique",
+        "description": "L’impact du football moderne sur les jeunes joueurs et leurs carrières."
+      }
+    ],
+    "auteurs": [
+      {
+        "prenom": "Claire",
+        "typeExperience": "Analyste football",
+        "presentation": "Spécialisée dans les jeunes talents, je décrypte les trajectoires des nouvelles étoiles du ballon rond."
+      },
+      {
+        "prenom": "Thomas",
+        "typeExperience": "Statisticien sportif",
+        "presentation": "J’utilise les données avancées pour mieux comprendre la performance des joueurs comme Yamal."
+      },
+      {
+        "prenom": "Elena",
+        "typeExperience": "Journaliste sportive",
+        "presentation": "Passionnée par les enjeux humains dans le sport, je m’intéresse aux parcours et à la pression médiatique."
+      }
+    ]
+  }
+}
