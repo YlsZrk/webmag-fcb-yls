@@ -118,9 +118,18 @@ nav ul{
   align-items: center;
   flex-direction: column;
 }
-.headerthemes{
+.themeConteneur{
    display: flex;
 }
 #main{
    background: #004990;
+}
+#articleXDetails{
+   display: flex;
+}
+#articleX{
+   display: flex;
+}
+#autreArticles{
+   display: flex;
 }

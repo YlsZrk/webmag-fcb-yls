@@ -52,13 +52,15 @@ function getData() {
        let header = document.getElementById("header")
 
        let titre = document.createElement(`div`)
+       let titreSite = document.createElement(`h2`)
+       titreSite.textContent = journal.nomJournal
        let phraseAccroche = document.createElement(`h1`)
        phraseAccroche.textContent = journal.phraseAccroche 
        titre.classList.add("headertitre")
        header.classList.add("header")
        
        
-       titre.appendChild(nom)
+       titre.appendChild(titreSite)
        titre.appendChild(phraseAccroche)
        header.appendChild(titre)
        console.log(header);
@@ -72,6 +74,8 @@ function getData() {
       //  headerTheme.appendChild(themeX)
       //  headerTheme.appendChild(contenuThemeX)
       //  header.appendChild(headerTheme)
+      //  let conteneurTheme = document.createElement(`div`)
+      //  conteneurTheme.classList.add("themeConteneur")
 
        themes.forEach(theme => {
         let headerTheme = document.createElement(`article`)
@@ -80,13 +84,14 @@ function getData() {
        themeX.textContent = theme.nom
        contenuThemeX.textContent = theme.description
        headerTheme.classList.add("headertheme")
-       let headerThemes = document.createElement(`div`)
-       headerThemes.classList.add("headerthemes")
+       
 
        headerTheme.appendChild(themeX)
        headerTheme.appendChild(contenuThemeX)
-       headerThemes.appendChild(headerTheme)
-       header.appendChild(headerThemes)
+       header.appendChild(headerTheme)
+      // conteneurTheme.appendChild(headerTheme)
+      //  console.log(conteneurTheme);
+
        });
 
 
@@ -104,20 +109,25 @@ function getData() {
        console.log(banniere);
 
        //ARTICLE PRINCIPAL
-       let articlePrincipal = document.getElementById("main")
-       articlePrincipal = document.createElement(`div`)       
+       let main = document.getElementById("main")
+       let articlePrincipal = document.createElement(`section`)       
        
-       let articlePrincipalTitre = document.createElement(`div`)
-       let articlePrincipalTitreA = document.createElement(`h4`)
-       let articlePrincipalTitreB = document.createElement(`h6`)
-       articlePrincipalTitreA.textContent = journal.articlePrincipal.titre
-       console.log(articlePrincipalTitreA);
-       articlePrincipalTitreB.textContent = `${journal.articlePrincipal.theme} - ${journal.articlePrincipal.date}`
-       console.log(articlePrincipalTitreB);
+       let articlePrincipalInfo =  document.createElement(`div`);
+       let articlePrincipalTitre = document.createElement(`h2`)
+       let articlePrincipalSoustitre = document.createElement(`h3`)
+       
+       articlePrincipalTitre.textContent = journal.articlePrincipal.titre
+       //console.log(articlePrincipalTitre);
+       articlePrincipalSoustitre.textContent = `${journal.articlePrincipal.theme} - ${journal.articlePrincipal.date}`
+       //console.log(articlePrincipalSoustitre);
 
-       articlePrincipalTitre.appendChild(articlePrincipalTitreA)
-       articlePrincipalTitre.appendChild(articlePrincipalTitreB)
-       articlePrincipal.appendChild(articlePrincipalTitre)
+
+       articlePrincipalInfo.appendChild(articlePrincipalTitre)
+       articlePrincipalInfo.appendChild(articlePrincipalSoustitre)
+
+       articlePrincipal.appendChild(articlePrincipalInfo)
+
+       main.appendChild(articlePrincipal)
 
        let articlePrincipalContenu = document.createElement(`div`) 
        let articlePrincipalDescription = document.createElement(`p`)
@@ -132,12 +142,51 @@ function getData() {
        
 
 
-
-
-
        //AUTRES ARTICLES
+       let articles = journal.articles
 
+       let autresArticles = document.createElement(`section`)
+       main.appendChild(autresArticles)
 
+       let autresArticlesTitre = document.createElement(`h1`)
+       autresArticlesTitre.textContent = "AUTRES ARTICLES"
+       autresArticles.appendChild(autresArticlesTitre)
+
+       
+
+       articles.forEach(article => {
+        let articleX = document.createElement(`div`)
+       
+       let articleXImage = document.createElement(`img`)
+       articleXImage.src = "images/image.png"
+       articleXImage.alt = "image article"
+       articleX.appendChild(articleXImage)
+
+       let articleXDetails = document.createElement(`article`)
+
+       let articleXTitre = document.createElement(`h4`)
+       let articleXSousTitre = document.createElement(`h6`)
+       let articleXDescription = document.createElement(`p`)
+       let articleXBouton = document.createElement(`p`)
+       articleXTitre.textContent = article.titre
+       articleXSousTitre.textContent = `${article.theme} - ${article.date}`
+       articleXDescription.textContent = article.contenu
+     
+       articleXBouton.textContent = "Lire l'article"
+
+       articleXDetails.appendChild(articleXTitre)
+       articleXDetails.appendChild(articleXSousTitre)
+       articleXDetails.appendChild(articleXDescription)
+       articleXDetails.appendChild(articleXBouton)
+       articleX.appendChild(articleXDetails)
+       autresArticles.appendChild(articleX)
+       articleXDetails.id = "articleXDetails"
+       articleX.id = "articleX"
+       });
+       
+       autresArticles.id = "autresArticles"
+       console.log(autresArticles);
+       
 
        //DECOUVREZ NOTRE EQUIPE
 
