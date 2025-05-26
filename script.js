@@ -13,6 +13,8 @@ function getData() {
       let journal = data.journal
       let themes = data.journal.themes
       let nomJournal = data.journal.nomJournal
+      let dateJournal = data.journal.date
+      let villeJournal = data.journal.ville
      
       //NAV
       //Logo
@@ -64,6 +66,9 @@ function getData() {
        titre.appendChild(phraseAccroche)
        header.appendChild(titre)
        console.log(header);
+
+       let divTheme = document.createElement('div');
+       divTheme.className = 'div-Theme'
        
       //  let headerTheme = document.createElement(`article`)
       //  let themeX = document.createElement(`h3`)
@@ -88,28 +93,28 @@ function getData() {
 
        headerTheme.appendChild(themeX)
        headerTheme.appendChild(contenuThemeX)
-       header.appendChild(headerTheme)
+       divTheme.appendChild(headerTheme)
       // conteneurTheme.appendChild(headerTheme)
       //  console.log(conteneurTheme);
 
        });
 
-
+       header.appendChild(divTheme)
 
 
        //MAIN
        //BANNIERE
-       let banniere = document.getElementById("main")
-       banniere = document.createElement(`div`)
+       let main = document.getElementById("main")
+       let banniere = document.createElement(`div`)
        let banniereImage = document.createElement(`img`)
-       banniereImage.src = `images/image.png`
+       banniereImage.src = `images/LamineAURA.jpg`
        banniereImage.alt = "Barca 2024/25"
+       banniereImage.id = "banniereImage"
 
-       banniere.appendChild(banniereImage)
+       main.appendChild(banniere)
        console.log(banniere);
 
        //ARTICLE PRINCIPAL
-       let main = document.getElementById("main")
        let articlePrincipal = document.createElement(`section`)       
        
        let articlePrincipalInfo =  document.createElement(`div`);
@@ -126,6 +131,7 @@ function getData() {
        articlePrincipalInfo.appendChild(articlePrincipalSoustitre)
 
        articlePrincipal.appendChild(articlePrincipalInfo)
+       articlePrincipal.appendChild(banniereImage)
 
        main.appendChild(articlePrincipal)
 
@@ -134,7 +140,7 @@ function getData() {
        let articlePrincipalBouton = document.createElement(`p`)
        articlePrincipalDescription.textContent = journal.articlePrincipal.description
        articlePrincipalBouton.textContent = "Lire l'article"
-       articlePrincipalBouton.classList.add = ("bouton", "primaire")
+       articlePrincipalBouton.classList.add("bouton", "primaire")
        articlePrincipalContenu.appendChild(articlePrincipalDescription)
        articlePrincipalContenu.appendChild(articlePrincipalBouton)
        articlePrincipal.appendChild(articlePrincipalContenu)
@@ -151,7 +157,7 @@ function getData() {
        let autresArticlesTitre = document.createElement(`h1`)
        autresArticlesTitre.textContent = "AUTRES ARTICLES"
        autresArticles.appendChild(autresArticlesTitre)
-
+       autresArticles.id = "autresArticles"
        
 
        articles.forEach(article => {
@@ -171,7 +177,7 @@ function getData() {
        articleXTitre.textContent = article.titre
        articleXSousTitre.textContent = `${article.theme} - ${article.date}`
        articleXDescription.textContent = article.contenu
-     
+       articleXBouton.classList.add("bouton", "primaire")
        articleXBouton.textContent = "Lire l'article"
 
        articleXDetails.appendChild(articleXTitre)
@@ -189,6 +195,49 @@ function getData() {
        
 
        //DECOUVREZ NOTRE EQUIPE
+       let auteurs = journal.auteurs
+       
+      let equipe = document.createElement(`section`)
+       main.appendChild(equipe)
+       let message = document.createElement(`h2`)
+       message.textContent = "Découvrez notre équipe"
+       equipe.appendChild(message)
+
+       let divEquipe = document.createElement('div');
+       divEquipe.className = 'div-equipe'
+
+       auteurs.forEach(auteur => {
+  
+       let divAuteurs = document.createElement(`div`)
+       let auteursImage =document.createElement(`img`)
+       let auteursPrenom =document.createElement(`h6`)
+       let auteursDescription =document.createElement(`p`)
+
+       auteursImage.src = auteur.image
+       auteursImage.alt = "avatar"
+       auteursPrenom.textContent = auteur.prenom
+       auteursDescription.innerHTML = `<p>${auteur.typeExperience}</p><p>${auteur.presentation}</p> `
+       auteursImage.className = "avatar"
+
+       divAuteurs.className = "divAuteurs"
+       equipe.className = "equipe"
+       divAuteurs.appendChild(auteursImage)
+       divAuteurs.appendChild(auteursPrenom)
+       divAuteurs.appendChild(auteursDescription)
+       console.log(divAuteurs);
+        divEquipe.appendChild(divAuteurs)
+        console.log(divEquipe);
+        
+       });
+
+       equipe.appendChild(divEquipe)
+       
+       //FOOTER
+       let footer = document.getElementById("footer")
+       let tag = document.createElement(`p`)
+       tag.textContent = `©${journal.ville} - ${journal.date}`
+       footer.appendChild(tag)
+    
 
        /// FIN DU CODE
      })

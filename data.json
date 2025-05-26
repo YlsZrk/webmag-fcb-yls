@@ -3,6 +3,8 @@
     "nomJournal": "Barça Futur",
     "phraseAccroche": "Le présent du Barça, l’avenir en marche",
     "texteAppelAction": "Rejoignez notre communauté pour suivre l’ascension de Lamine Yamal et les talents du Barça",
+    "date": "30 mai 2026",
+    "ville": "Budapest",
     "articlePrincipal": {
       "titre": "Lamine Yamal, le prodige du Barça : une ascension fulgurante",
       "description": "À seulement 17 ans, Lamine Yamal s'impose comme le nouveau visage du FC Barcelone, héritant du légendaire numéro 10 et battant des records de précocité.",
@@ -29,7 +31,7 @@
         "titre": "Un contrat record : clause libératoire à 1 milliard d’euros pour Yamal",
         "date": "20 Mai 2025",
         "theme": "Débats",
-        "image": "images/LamineAURA.jpg",
+        "image": "images/lamine304.webp",
         "contenu": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vel ipsa deleniti, neque pariatur inventore quibusdam vitae facere? Saepe commodi quibusdam sed fugit, maxime dolores molestias eveniet pariatur possimus repudiandae."
       },
       {
@@ -78,17 +80,20 @@
       {
         "prenom": "Claire",
         "typeExperience": "Analyste football",
-        "presentation": "Spécialisée dans les jeunes talents, je décrypte les trajectoires des nouvelles étoiles du ballon rond."
+        "presentation": "Spécialisée dans les jeunes talents, je décrypte les trajectoires des nouvelles étoiles du ballon rond.",
+        "image": "images/avatar.jpg"
       },
       {
         "prenom": "Thomas",
         "typeExperience": "Statisticien sportif",
-        "presentation": "J’utilise les données avancées pour mieux comprendre la performance des joueurs comme Yamal."
+        "presentation": "J’utilise les données avancées pour mieux comprendre la performance des joueurs comme Yamal.",
+        "image": "images/avatar.jpg"
       },
       {
         "prenom": "Elena",
         "typeExperience": "Journaliste sportive",
-        "presentation": "Passionnée par les enjeux humains dans le sport, je m’intéresse aux parcours et à la pression médiatique."
+        "presentation": "Passionnée par les enjeux humains dans le sport, je m’intéresse aux parcours et à la pression médiatique.",
+        "image": "images/avatar.jpg"
       }
     ]
   }
