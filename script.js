@@ -158,7 +158,7 @@ function getData() {
         let articleX = document.createElement(`div`)
        
        let articleXImage = document.createElement(`img`)
-       articleXImage.src = "images/image.png"
+       articleXImage.src = article.image
        articleXImage.alt = "image article"
        articleX.appendChild(articleXImage)
 
