@@ -26,12 +26,12 @@ body{
 }
 
 .bouton.primaire{
-   background: #8005F2;
-   color: white;
+   background: #a51e4a;
+   color: #f7d800;
 }
 
 .bouton.primaire:hover{
-   background: #c38ff5;
+   background: #004990;
 }
 
 .bouton.secondaire{
@@ -90,6 +90,37 @@ nav ul{
     height: 100px;
     width: 100px;
 }
+.avatar{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   border: 2px solid black;
+   object-fit: cover;
+}
 .rouge{
     color:red
+}
+#header{
+   display: flex;
+   
+}
+.header{
+   display: flex;
+   flex-direction: column;
+}
+.headertitre{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.headertheme{
+   display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.headerthemes{
+   display: flex;
+}
+#main{
+   background: #004990;
 }
